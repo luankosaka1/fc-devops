@@ -2,11 +2,10 @@ apiVersion: kustomize.config.k8s.io/v1beta1
 kind: Kustomization
 
 resources:
-  - "deployment.yml"
-  - "service.yml"
+- deployment.yml
+- service.yml
 
 images:
-  - name: goserver
-    newName: lkosaka/gitopsfc
-    newTag: newTag
-  
+- name: goserver
+  newName: lkosaka/giopsfc
+  newTag: dfc7e1cb5ccdac4328c65853784a92319cd134ff
